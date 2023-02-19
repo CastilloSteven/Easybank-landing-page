@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
+
+:root{
+    --Dark-Blue: hsl(233, 26%, 24%);
+    --Lime-Green: hsl(136, 65%, 51%);
+    --Bright-Cyan: hsl(192, 70%, 51%);
+
+    --Grayish-Blue: hsl(233, 8%, 62%);
+    --Light-Grayish-Blue: hsl(220, 16%, 96%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-family: 'Public Sans', sans-serif;
+}
+li{
+    list-style: none;
+}
+button{
+    background-color: initial;
+    border: none;
+    font-size: 1em;
+    font-family: 'Public Sans', sans-serif;
+}
+
+
+/* nav */
+
+.nav{
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row nowrap;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+/* .nav__img{} */
+.nav__ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row nowrap;
+    color: var(--Grayish-Blue);
+}
+.nav__li{
+    padding: 1rem;
+}
+.nav__btn{
+    background-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    color: var(--White);
+}
+
+/* header */
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    position: relative;
+    overflow: hidden;
+}
+.header__txt{
+    width: 50%;
+    margin: 5% auto;
+    padding: 5rem;
+    z-index: 2;
+}
+.header__h1{
+    font-size: 3em;
+    font-weight: 400;
+    color: var(--Dark-Blue);
+}
+.header__p{
+    width: 95%;
+    margin-top: 1rem;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: var(--Grayish-Blue);
+}
+.header__btn{
+    background-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    color: var(--White);
+}
+.header__img--fondo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -15%;
+    left: 40%;
+}
+.header__img--contenedor{
+    width: 50%;
+    z-index: 2;
+}
+.header__img{
+    transform: scale(110%) translateY(-10%) translateX(10%);
+}
+
