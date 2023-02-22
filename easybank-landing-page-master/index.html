@@ -7,29 +7,28 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     
     <link rel="stylesheet" href="css/estilos.css">
-
+    <script defer src="js/script.js"></script>
     <title>Frontend Mentor | Easybank landing page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <!-- <style>
-        .attribution { font-size: 11px; text-align: center; }
-        .attribution a { color: hsl(228, 45%, 44%); }
-    </style> -->
 </head>
 <body>
 <nav class="nav">
-  <img src="images/logo.svg" alt="logo" class="nav__img">
-  <ul class="nav__ul">
-    <li class="nav__li">Home</li>
-    <li class="nav__li">About</li>
-    <li class="nav__li">Contact</li>
-    <li class="nav__li">Blog</li>
-    <li class="nav__li">Careers</li>
-  </ul>
-  <button class="nav__btn">Request Invite</button>
+  <div class="nav--contenedor">
+    <img src="images/logo.svg" alt="logo" class="nav__img">
+    <ul class="nav__ul">
+      <li class="nav__li">Home</li>
+      <li class="nav__li">About</li>
+      <li class="nav__li">Contact</li>
+      <li class="nav__li">Blog</li>
+      <li class="nav__li">Careers</li>
+    </ul>
+    <button class="nav__btn">Request Invite</button>
+    <img src="images/icon-hamburger.svg" alt="icon-hamburger" class="nav__responsive--open">
+    <img src="images/icon-close.svg" alt="icon-close" class="nav__responsive--close">
+  </div>
 </nav>
 <header class="header">
-  <img src="images/bg-intro-desktop.svg" alt="image-mockups" class="header__img--fondo">
+  <img src="images/bg-intro-desktop.svg" alt="image-mockups" class="header__fondo--desktop">
+  <img src="images/bg-intro-mobile.svg" alt="bg-intro-mobile" class="header__fondo--mobile">
     <div class="header__txt">
         <h1 class="header__h1">Next generation digital banking</h1>
         <p class="header__p">

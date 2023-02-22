@@ -16,7 +16,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html, body{
     width: 100%;
     height: 100%;
@@ -43,19 +42,21 @@ a{
 
 .nav{
     width: 100%;
-    background-color: var(--White);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-flow: row nowrap;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 3;
 }
+.nav--contenedor{
+    width: 100%;
+    background-color: var(--White);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: row nowrap;
+}
 /* .nav__img{} */
 .nav__ul{
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,6 +96,9 @@ a{
 .nav__btn:hover, .header__btn:hover, .footer__btn:hover{
     opacity: 0.5;
 }
+.nav__responsive--open, .nav__responsive--close{
+    display: none;
+}
 
 /* header */
 
@@ -133,7 +137,7 @@ a{
     color: var(--White);
     transition: opacity 0.3s;
 }
-.header__img--fondo{
+.header__fondo--desktop{
     width: 90%;
     height: 100%;
     object-fit: cover;
@@ -141,6 +145,16 @@ a{
     top: -20%;
     left: 40%;
 }
+.header__fondo--mobile{
+    display: none;
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .header__img--contenedor{
     width: 50%;
     z-index: 2;
@@ -183,10 +197,12 @@ a{
     align-items: flex-start;
     justify-content: space-between;
     flex-flow: row wrap;
+    gap: 1rem;
 }
 .article__tarjeta{
     width: 23%;
     min-width: 200px;
+    margin: 2rem auto;
 }
 /* .article__img--tarjeta{} */
 .article__h3--tarjeta{
@@ -204,6 +220,7 @@ a{
 .article__tarjeta--last{
     width: 23%;
     min-width: 200px;
+    margin: 2rem auto;
     background-color: var(--White);
     border-radius: 0.2rem;
     overflow: hidden;
@@ -300,4 +317,104 @@ a{
     color: var(--White);
     font-size: 0.8em;
     margin: 0.5rem;
+    text-align: center;
+}
+
+
+@media screen and (max-width:900px) {
+    .nav--contenedor{
+        padding: 1rem 2rem;
+        justify-content: space-between;
+        position: relative;
+    }
+    .nav__ul{
+        width: 100%;
+        padding: 2rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        flex-flow: column;
+        background-image: linear-gradient(to bottom, var(--Dark-Blue), rgb(0,0,0,0));
+        display: none;
+    }
+    .nav__li{
+        width: 80%;
+        padding: 1.5rem;
+        margin: auto;
+        text-align: center;
+        background-color: var(--White);
+        color: var(--Dark-Blue);
+        font-weight: 700;
+    }
+    .nav__btn{
+        display: none;
+    }
+    .nav__responsive--open{
+        display: block;
+        cursor: pointer;
+    }
+    .nav__responsive--close{
+        display: none;
+        cursor: pointer;
+    }
+
+    .header{
+        flex-flow: column-reverse;
+    }
+    .header__txt{
+        width: 100%;
+        margin: 5% auto;
+        text-align: center;
+        padding: 1rem;
+    }
+    .header__h1{
+        font-size: 2.5em;
+    }
+    .header__p{
+        width: 100%;
+    }
+    .header__fondo--desktop{
+        display: none;
+    }
+    .header__fondo--mobile{
+        display: block;
+    }
+    .header__img--contenedor{
+        width: 100%;
+    }
+    .header__img{
+        width: 100%;
+        transform: translateY(-15%);
+        object-fit: cover;
+    }
+    .main{
+        transform: none;
+    }
+    .section--bank{
+        text-align: center;
+    }
+    .article--txt{
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+    .footer{
+        padding: 3rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+        transform: translateY(5rem);
+    }
+    .footer__redes, .footer__enlaces, .footer__creditos, .attribution{
+        grid-area: auto;
+    }
+    .footer__enlaces{
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width:522px) {
+    .article__tarjeta--last, .article__tarjeta{
+        width: 100%;
+    }
 }
