@@ -20,7 +20,7 @@
 <h2 id="enlaces">Enlaces</h2>
     <ul>
         <li><a href="https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN">Enlace al reto en Frontend Mentor</a></li>
-        <li><a href="#">Enlace a la solución del reto</a></li>
+        <li><a href="https://castillosteven.github.io/Easybank-landing-page/">Enlace a la solución del reto</a></li>
     </ul> 
 
 <h2 id="desarrollado">Desarrolado con</h2>
