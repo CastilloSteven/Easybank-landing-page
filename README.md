@@ -1,6 +1,6 @@
 <h1>Solución al reto: Frontend Mentor - Easybank landing page</h1>
 <p>
-    Este proyecto es la solucion al reto de Front-End <a href="https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN">Easybank landing page challenge on Frontend Mentor.</a>
+    Este proyecto es la solución al reto de Front-End <a href="https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN">Easybank landing page challenge on Frontend Mentor.</a>
     Los desafíos de Frontend Mentor ayudan a mejorar las habilidades de codificación mediante la creación de proyectos realistas.
 </p>
 
